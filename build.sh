@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# حمل Cecil
-curl -sSOL https://cecil.app/cecil.phar
-chmod +x cecil.phar
+# تثبيت Flutter
+git clone https://github.com/flutter/flutter.git -b stable
+export PATH="$PATH:`pwd`/flutter/bin"
 
-# شغّل البناء
-php cecil.phar build
+# تحقق من التنصيب
+flutter doctor
 
-# لو الملفات اتبنتت في مجلد غير _site، انقلها (اختياري)
-mv output _site || true
+# بناء تطبيق الويب
+flutter build web

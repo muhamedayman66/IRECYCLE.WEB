@@ -1,6 +1,9 @@
 [build]
-command = "bash build.sh"
-publish = "_site"
+  command = "bash build.sh"
+  publish = "build/web"
 
 [build.environment]
-PHP_VERSION = "8.2"
+  FLUTTER_VERSION = "3.19.6"  # أو أي نسخة بتستخدمها
+
+[[plugins]]
+  package = "netlify-plugin-flutter"
