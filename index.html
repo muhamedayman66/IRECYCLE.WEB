@@ -242,6 +242,14 @@ Each material has a specific point value per number of items. For example, 5 pla
   </main>
 
   <!-- Footer -->
+<style>
+    .icon-slate-400 {
+        filter: invert(60%) sepia(10%) saturate(400%) hue-rotate(180deg) brightness(90%) contrast(90%);
+    }
+    .icon-slate-400:hover {
+        filter: invert(60%) sepia(50%) saturate(1000%) hue-rotate(120deg) brightness(100%) contrast(100%);
+    }
+</style>
 <footer class="bg-slate-800 text-white">
     <div class="container mx-auto max-w-7xl py-16 px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left items-start">
@@ -272,6 +280,12 @@ Each material has a specific point value per number of items. For example, 5 pla
                             <span>irecycle.eg@gmail.com</span>
                         </a>
                     </li>
+                    <li>
+                        <a href="https://www.instagram.com/irecycle.eg" class="text-slate-400 hover:text-emerald-400 transition-colors inline-flex items-center space-x-2">
+                            <img src="https://img.icons8.com/m_outlined/512/instagram-new.png" alt="Instagram Icon" class="w-5 h-5 icon-slate-400">
+                            <span>Instagram</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -279,10 +293,10 @@ Each material has a specific point value per number of items. For example, 5 pla
     <!-- Bottom Bar -->
     <div class="bg-slate-900 py-4 mt-8">
         <div class="container mx-auto max-w-7xl px-4 text-center text-sm text-slate-500">
-            &copy; <span id="currentYear"></span> IRECYCLE. All Rights Reserved.
+            © <span id="currentYear"></span> IRECYCLE. All Rights Reserved. Icons by <a href="https://icons8.com" class="text-slate-500 hover:text-emerald-400">Icons8</a>.
         </div>
     </div>
-  </footer>
+</footer>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
